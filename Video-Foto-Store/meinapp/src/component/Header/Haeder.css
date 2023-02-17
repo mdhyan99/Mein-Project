@@ -1,0 +1,26 @@
+.kont{
+    font-size: 25px;
+    color: brown;
+    padding: 5px 20px;
+}
+.selc{
+    font-size: 20px;
+    color: brown;
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.link:hover {
+    color:brown;
+}
+.cart{
+    color: rgb(37, 37, 220);
+    /* margin-left: 30px; */
+    font-size: 30px;
+    border: none;
+    background-color:rgba(19, 18, 18, 0.13) ;
+}
+input{
+    width: 120px;
+}

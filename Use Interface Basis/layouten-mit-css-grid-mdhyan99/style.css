@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+   margin-top: -15px;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #eee;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100vh;
+}
+h1 {
+    grid-row: 2/3;
+    grid-column: 4/-1;
+color:#ff4501;
+z-index: 1;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 140px;
+padding: 15px;
+letter-spacing: 18px;
+font-weight: 300;
+}
+    nav{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+     margin-top: 15px;
+      grid-column: 1/-1;
+}
+   .Rim {
+        grid-column: 1/3;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .menu {
+        font-weight: bolder;
+    }
+.container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr) ;
+    grid-template-rows:repeat(4,1fr) ;
+gap: 10px;
+grid-column: 1/-1;
+grid-row: 2/-2;
+}
+.imag0 {
+    background-size: cover;
+    background-position: center;
+}
+.imags-1 {
+background-image: url(./assets/item-one.jpeg);
+}
+.imags-2{
+    background-image: url(./assets/item-two.jpeg);
+}
+.imags-3 {
+    background-image: url(./assets/item-three.jpeg);
+    grid-row: 4/5;
+    grid-column:7/8;
+}
+.imags-4 {
+    background-image: url(./assets/item-four.jpeg);
+    grid-row: 3/4;
+    grid-column:6/7;
+}
+.imags-5 {
+    background-image: url(./assets/item-five.jpeg);
+    grid-row: 2/3;
+    grid-column:5/6;
+}
+.imags-6 {
+    background-image: url(./assets/item-six.jpeg);
+    grid-row: 2/3;
+    grid-column:3/4 ;
+}
+.imags-7 {
+    background-image: url(./assets/item-seven.jpeg);
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.imags-8 {
+    background-image: url(./assets/item-eight.jpeg); 
+    grid-row: 3/5;
+    grid-column:1/3 ;
+}
+.imags-9 {
+    background-image: url(./assets/item-nine.jpeg);
+    grid-row: 1/3;
+    grid-column:7/9 ;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(1,1fr) ;
+    margin-top: 10px;
+}
+.berl {
+    font-weight: bold;
+font-weight: 900;
+font-size: 20px;
+}
+.dci {
+    font-style: italic;
+}

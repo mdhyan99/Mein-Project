@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/naturbild.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    display: block;
+    text-decoration: none;
+    background-image: url(../images/naturbild2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+p {
+    color: rgb(116, 25, 25);
+}
+.info p {
+    color: rgba(153, 205, 50, 0.617);
+}
+ul :hover {
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+.ul1 {
+    list-style: none;
+    text-align: end;
+}
+a {
+    display: block;
+    text-decoration: none;
+    display: block;
+}
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 30px;
+    border-style: 30px solid red;
+}
+#hobby article img {
+    float: right;
+    display: block;
+    width: 30%;
+    margin-bottom: 15px;
+    border-radius: 50% 50%;
+    outline: 5px dotted rgb(148, 84, 84);
+}
+#hobby article,
+hr,
+ul  {
+    clear: both;
+}

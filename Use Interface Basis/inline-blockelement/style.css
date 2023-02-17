@@ -1,0 +1,36 @@
+h1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(108, 224, 224);
+}
+p {
+    width: 120px;
+    height: 60px;
+background-color: red;
+}
+nav {
+    width: 160px;
+    height: 90px;
+    color: red;
+    background-color: yellow;
+}
+span {
+   
+    
+     background-color: rgb(112, 87, 57);
+}
+a {
+
+    width: 500px;
+    background-color: blue;
+}
+img {
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(112, 87, 57);
+}
+article, h2 {
+    display: inline-block;
+width: 300px;
+background-color: blue;
+}

@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #46529d;
+  color: #fff;
+}
+.text-center{
+  text-align: center;
+}
+.container{
+  width: 60%;
+  margin: 10% auto;
+}
+.listItems{
+  background: #fff;
+  color: #46529d;
+}
+.listItems p{
+ margin: 0;
+ text-align: center;
+ padding: 10px 0px;
+}
+.listItems span{
+display: inline-block;
+text-align: center;
+padding: 10px 0px;
+font-size: 20px;
+border: 0.3px solid #ccc;
+}
+.listItems span.title{
+  background: #2ebaee;
+  color: #fff;
+}
+.listItems span.name ,
+  form input[type=text]{
+    width: 60%;
+}
+.listItems span.age ,
+  form input[type=number]{
+    width: 30%;
+}
+.listItems span.action ,
+  form input[type=submit]{
+    width: 10%;
+}
+.listItems span.icon{
+  background: #2ebaee;
+  cursor:  pointer;
+}
+form input {
+  padding: 10px;
+  background: #ebebeb;
+  border: transparent;
+  border: 0.3pss solid #ccc;
+}
+form input[type=submit] {
+  background: #2ebaee;
+  cursor:  pointer;
+  border: 0.3pss solid #2ebaee;
+  color: #fff;
+}

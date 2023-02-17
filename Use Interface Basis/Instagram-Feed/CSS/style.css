@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: block;
+  max-width: 100%;
+  height: auto;
+    background-color:  #FAFAFA;
+    
+}
+header {
+    background: rgb(97,91,203);
+    background: linear-gradient(90deg, rgb(192, 123, 93) 0%, rgba(195,193,36,0.9668242296918768) 35%, rgb(153, 63, 161) 100%);
+  
+
+
+}
+main {
+    display: inline-block;
+    aspect-ratio: 1;
+    text-align: center;   
+
+    margin: 0 auto;
+}
+h1 {
+text-align: center;
+
+  
+}
+ img {
+    
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
