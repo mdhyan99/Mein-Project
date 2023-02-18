@@ -9,7 +9,9 @@ import WarenKorbContext from "../context/WarenKorbContext";
 // import { MdOutlineDeleteForever } from "react-icons/md";
 
 const ProductCard = ({ item }) => {
-    const { addKorb, cart } = useContext(WarenKorbContext);
+    const { addKorb, cart,date } = useContext(WarenKorbContext);
+
+    
     return (
         <div className="">
             <div className="d-flex  justify-content-between card  ">
@@ -23,7 +25,7 @@ const ProductCard = ({ item }) => {
                 {/* für Icon  */}
                 <div className="d-flex justify-content-between icon">
                     <IconProdCard item={item} />
-
+{/* <p>{date.map(</p> */}
                     <div>
                         <IoMdAdd
                             style={{

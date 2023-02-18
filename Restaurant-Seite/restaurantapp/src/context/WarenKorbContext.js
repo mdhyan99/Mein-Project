@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import WarenKorb from "../components/WarenKorb";
 const WarenKorbContext = createContext();
 
 export const WarenKorbProvider = ({ children }) => {
@@ -12,6 +11,37 @@ export const WarenKorbProvider = ({ children }) => {
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
+
+    /*const [cart2, setCart2] = useState([]);
+    const [date, setDate] = useState([]);
+    useEffect(() => {
+        // localStorage.setItem("cart", JSON.stringify(cart));
+        fetch("https://api.stripe.com/v1/charges")
+        .then((res)=>res.json())
+        .then((daten)=>setDate(daten))
+
+    }, []);
+    
+    useEffect(() => {
+        // localStorage.setItem("cart", JSON.stringify(cart));
+        fetch("https://api.stripe.com/v1/charges")
+        .then((res)=>res.json())
+        .then((daten)=>setCart2(daten))
+
+    }, []);
+
+    useEffect(() => {
+        // localStorage.setItem("cart", JSON.stringify(cart));
+        fetch("https://api.stripe.com/v1/charges",{
+            method:"PUT",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+            body: JSON.stringify(cart2),
+        })
+
+        
+    }, [cart2]);*/
 
     // für add produckt in Warenkorb
     const addKorb = (id) => {
@@ -27,7 +57,7 @@ export const WarenKorbProvider = ({ children }) => {
     // für remove produckt in Warenkorb
     const removeKorb = (id) => {
         const item = cart.find((item) => item.id === id);
-        
+
         if (item) {
             item.quantity--;
             if (item.quantity <= 0) {
@@ -56,6 +86,7 @@ export const WarenKorbProvider = ({ children }) => {
                 closeCart,
                 removeKorb,
                 isOpen,
+                // date
             }}
         >
             {children}

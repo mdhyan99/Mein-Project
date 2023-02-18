@@ -34,16 +34,22 @@ const Tablen = () => {
                         <th>Name</th>
                         <th>Price</th>
                         <th>Menge</th>
-                        <th>Summe</th>
+                        
+                        <th>summe1</th>
+                        <th>Summe2</th>
+                        
+
                     </tr>
                 </thead>
                 <tbody>
                 
                     
-                    {product.map((item) => {
+                    {product.map((item,index) => {
                         const summe = (+item.price)*(+item.menge)
-                        const summe1 = (+item.price)*(+item.menge)
-                      
+                        let summe1=0
+                        for(let i =index; i>=0;i--){
+                          summe1=summe1 + product[i].price * product[i].menge
+                        }
                       return (
                         <React.Fragment key={item.id}>
                               <tr>
@@ -54,7 +60,7 @@ const Tablen = () => {
                                             value={item.name}
                                             type="text"
                                              name="name"
-                                             style={{width:"100%",fontSize:"7px", border:"none"}}
+                                             style={{width:"100%",fontSize:"17px", border:"none"}}
                                             onChange={(e)=>handelChange(item.id,e)}
                                             className="inpt"
                                         />
@@ -80,7 +86,7 @@ const Tablen = () => {
                                     </td>
 
                                     <td>{summe}</td>
-                                    <td></td>
+                                    <td>{summe1}</td>
                                
 
          
@@ -92,7 +98,7 @@ const Tablen = () => {
                     })}
 
                     <tr className="centr">
-                        <td colSpan={4}>Total</td>
+                        <td colSpan={5}>Total</td>
                         
                         <td> {product.reduce((total, cartItem) => {
                                 return total + cartItem.price * cartItem.menge;
