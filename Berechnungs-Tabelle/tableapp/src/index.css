@@ -1,16 +1,13 @@
 
-.tabl{
-  padding: 30px;
+.tab{
+  text-align: center;
 
-  font-size: 15px;
+  margin-top: 50px;
 }
 .centr{
   text-align: center;
 }
-.inpt{
-  width: 70%;
-  text-align: center;
-}
+
 
 
 /* für die pfeile löchen */
@@ -25,4 +22,30 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+
+
+.container {
+  display: grid;
+  text-align:  center;
+  padding: 0;
+  grid-template-columns:  1fr 2fr 1fr 1fr 1fr 1fr;
+}
+.container .item{
+  border: 1px solid gray;
+  text-align: center;
+
+}
+
+
+.container input{
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.total {
+  border: 1px solid gray;
+  
 }
