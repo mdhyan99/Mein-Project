@@ -1,7 +1,10 @@
+body{
+  padding: 20px;
 
+}
 .tab{
   text-align: center;
-
+  border: 1px solid gray;
   margin-top: 50px;
 }
 .centr{
@@ -26,26 +29,28 @@ input[type=number] {
 
 
 
-.container {
+.container1 {
   display: grid;
   text-align:  center;
   padding: 0;
+  width: 100%;
   grid-template-columns:  1fr 2fr 1fr 1fr 1fr 1fr;
 }
-.container .item{
+.container1 .item{
   border: 1px solid gray;
   text-align: center;
 
 }
 
 
-.container input{
+.container1 input{
   border: none;
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
-.total {
-  border: 1px solid gray;
+.container1 .total {
+ 
+  grid-column: span 5;
   
 }

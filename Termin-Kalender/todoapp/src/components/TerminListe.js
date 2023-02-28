@@ -8,7 +8,7 @@ const TerminListe = () => {
         <Table  bordered hover className="text-center1">
             <thead>
                 <tr >
-                    <th >Name</th>
+                    <th >Monat</th>
                     <th>Datum</th>
                     <th>Action</th>
                 </tr>

@@ -5,28 +5,23 @@ import FormContext from "../context/FormContext";
 
 const Tablen = () => {
     const { date, setDate } = useContext(FormContext);
-    const [product, setProduct] = useState([
-        { id: 1, name: "", price: 2, menge: 4, artikel: "Fernseher" },
-        { id: 2, name: "", price: 5, menge: 6, artikel: "Laptop" },
-        { id: 3, name: "", price: 4, menge: 6, artikel: "Bücher" },
-        { id: 4, name: "", price: 6, menge: 6, artikel: "Handy" },
-    ]);
+    // const [product, setProduct] = useState();
     // const [product, setProduct] = useState();
     const handelChange = (id, e) => {
-        const index = product.findIndex((item) => item.id === id);
+        const index = date.findIndex((item) => item.id === id);
 
         console.log(e.target.value, e.target.name);
 
-        const newProduct = product;
-        newProduct[index][e.target.name] = e.target.value;
-        console.log(newProduct);
-        setProduct([...newProduct]);
-        setDate([...newProduct]);
+    
+        date[index][e.target.name] = e.target.value;
+        console.log(date);
+        setDate([...date]);
+        
     };
 
     return (
         <div className="tab">
-            <div className="container">
+            <div className="container1">
                 <div className="item">###</div>
                 <div className="item">Name</div>
                 <div className="item">Price</div>
@@ -34,7 +29,7 @@ const Tablen = () => {
                 <div className="item">sum1</div>
                 <div className="item">Sum2</div>
             </div>
-            <div className="container">
+            <div className="container1">
                 {date.map((item, index) => {
                     const summe = +item.price * +item.menge;
                     let summe1 = 0;
@@ -83,12 +78,12 @@ const Tablen = () => {
                     );
                 })}
             </div>
-            <div className="container ">
+            <div className="container1 ">
+                {/* <div className=""></div>
                 <div className=""></div>
                 <div className=""></div>
-                <div className=""></div>
-                <div className=""></div>
-                <div className="">Total</div>
+                <div className=""></div> */}
+                <div className="total item">Total</div>
                 <div className="item">
                     {date
                         .reduce((total, cartItem) => {
