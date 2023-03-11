@@ -51,7 +51,7 @@ const Termin = () => {
                     <td   
                         onClick={() => deletItem(item.id)}
                        
-                        value="add"> <Button className="btn  "  variant="primary">Löchen</Button></td>
+                        value="add"> <Button className="btn"  variant="primary">Löchen</Button></td>
                 </tr>
                             );
                         })
