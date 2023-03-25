@@ -5,7 +5,7 @@ import axios from 'axios'
 import toast from "react-hot-toast";
 
 const TodoForm = () => {
-    const { todos,addTodos ,setTodos} = useContext(StoreContext);
+    const { todos,addTodos } = useContext(StoreContext);
     const {
         register,
         handleSubmit,

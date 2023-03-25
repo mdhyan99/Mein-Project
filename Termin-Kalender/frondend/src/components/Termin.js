@@ -7,26 +7,7 @@ import TerminContext from "../context/TerminContext";
 
 const Termin = () => {
     const {termine,deletItem}=useContext(TerminContext)
-    // const listItems = termine.length ? (
-    //     termine.map((item) => {
-    //         return (
-    //             <div key={item.id}>
-    //                 <span className="name">{item.name}</span>
-    //                 <span className="datum">{item.datum}</span>
-    //                 <span className="uhr">{item.uhr}</span>
-    //                 <span className="beschreibung">{item.beschreibung}</span>
-    //                 <span
-    //                     className="action title"
-    //                     onClick={() => deletItem(item.id)}
-    //                 >
-    //                     Löchen
-    //                 </span>
-    //             </div>
-    //         );
-    //     })
-    // ) : (
-    //     <p>es gibt kein Termine</p>
-    // );
+    
     return (
         <div className="text-center1" >
             {/* <img className="imges" src={image} alt={image} /> */}
@@ -42,9 +23,9 @@ const Termin = () => {
             <tbody className="color" >
                { 
               termine.length ? (
-                termine.map((item) => {
+                termine.map((item,i) => {
                     return (
-               <tr   key={item.id}>
+               <tr   key={i}>
                     <td  > {item.name}</td>
                     <td> {item.datum} {item.uhr}</td>
                     <td > {item.beschreibung}</td>

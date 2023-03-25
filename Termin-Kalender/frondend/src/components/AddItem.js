@@ -1,4 +1,4 @@
-import React, { useContext,useState } from "react";
+import React, { useContext,useEffect,useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -7,35 +7,9 @@ import image from "./image/p1.webp";
 import TerminContext from "../context/TerminContext";
 
 const AddItem = () => {
-    const {addItem} = useContext(TerminContext)
-    const [  termin, setTermin ] = useState({
-        name: "",
-        datum: "",
-        uhr: "",
-        beschreibung: "",
-    });
+    const {termine,setTermine,addItem,handelSubmit,handelChange1,termin} = useContext(TerminContext)
 
-    const handelChange1 = (e) => {
-        setTermin({ ...termin, [e.target.id]: e.target.value });
-    };
-
-    const handelSubmit = (e) => {
-        e.preventDefault();
-        if (e.target.name.value === "") {
-          alert("Bitte schreiben Sie Ihre Name");
-          return
-        } 
-        console.log("speichern");
-            addItem(termin);
-            setTermin({
-                name: "",
-                datum: "",
-                uhr: "",
-                beschreibung: "",
-            });
-        
-    };
-
+        console.log(termine);
     return (
        
             <Row className="justify-content-center text-center">

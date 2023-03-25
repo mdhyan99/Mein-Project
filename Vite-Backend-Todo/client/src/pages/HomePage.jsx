@@ -11,20 +11,7 @@ import StoreContext from "../context/StoreContext";
 
 const HomePage = () => {
     const { todos, addTodos, setTodos } = useContext(StoreContext);
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const { data } = await axios.get("/todos");
-                setTodos(data);
-            } catch (err) {
-                console.log(err);
-                toast.error("Es ist schief gelaufen");
-            }
-        };
-        getData();
-
-     
-    }, []);
+   e
     return (
         <div>
             <h1 className="text-5xl mb-5"> Aufgaben verwalten</h1>

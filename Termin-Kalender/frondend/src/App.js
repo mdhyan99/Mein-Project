@@ -8,7 +8,7 @@ import { TerminProvider } from "./context/TerminContext";
 function App() {
     return (
       
-      <>
+      
                 <div className="text-center1">
                     <h1 className="text-center1"> Termin Liste</h1>
         <TerminProvider>
@@ -20,7 +20,7 @@ function App() {
                 </BrowserRouter>
             </TerminProvider>
         </div>
-      </>
+      
     );
 }
 export default App;

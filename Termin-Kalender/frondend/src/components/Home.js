@@ -3,10 +3,10 @@ import TerminListe from "./TerminListe";
 
 const Home = () => {
     return(
-    <>
+    <div>
       <AddItem  />
       <TerminListe  />
-    </>
+    </div>
     );
 };
 

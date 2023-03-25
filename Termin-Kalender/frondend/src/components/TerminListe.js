@@ -16,9 +16,9 @@ const TerminListe = () => {
             <tbody className="color text-center1" >
                { 
               termine.length ? (
-                termine.map((item) => {
+                termine.map((item,i) => {
                     return (
-               <tr  key={item.id}>
+               <tr  key={i}>
                     <td > {item.name}</td>
                     <td > {item.datum}</td>
                     <td   
