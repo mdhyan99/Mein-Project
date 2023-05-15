@@ -9,7 +9,7 @@ const AddForm = ({summe1}) => {
         <Table bordered hover className="text-center1">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Datum</th>
                     <th>price</th>
                     <th>Menge</th>
                     <th>Action</th>

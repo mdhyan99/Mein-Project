@@ -19,13 +19,14 @@ const Tablen = () => {
 
     return (
         <div className="tab">
+             <p className="text-1"> Berechnungstabelle</p>
             <div className="container1">
-                <div className="item">###</div>
-                <div className="item">Name</div>
-                <div className="item">Price</div>
-                <div className="item">Menge</div>
-                <div className="item">sum1</div>
-                <div className="item">Sum2</div>
+                <div className="item"><p className="text">###</p></div>
+                <div className="item"><p className="text">Datum</p> </div>
+                <div className="item"><p className="text">Price</p> </div>
+                <div className="item"><p className="text">Menge</p> </div>
+                <div className="item"><p className="text">sum1</p> </div>
+                <div className="item"><p className="text">Sum2</p> </div>
             </div>
             <div className="container1">
                 {date.map((item, index) => {
@@ -36,7 +37,7 @@ const Tablen = () => {
                     }
                     return (
                         <React.Fragment key={item.id}>
-                            <div className="item">{item.id}</div>
+                            <div className="item"><span className="span-zahl">{item.id}</span></div>
 
                             <div className="item itemname">
                                 <input
@@ -71,7 +72,7 @@ const Tablen = () => {
                                 />
                             </div>
                             <div className="item">{summe}</div>
-                            <div className="item">{summe1.toFixed(2)}</div>
+                            <div className="item"><span className="span-sum2">{summe1.toFixed(2)}</span></div>
                         </React.Fragment>
                     );
                 })}
@@ -81,13 +82,15 @@ const Tablen = () => {
                 <div className=""></div>
                 <div className=""></div>
                 <div className=""></div> */}
-                <div className="total item">Total</div>
+                <div className="total item"><p className="text-1">Total</p></div>
                 <div className="item">
-                    {date
+                   <span className="span-result">
+                   {date
                         .reduce((total, cartItem) => {
                             return total + cartItem.price / cartItem.menge;
                         }, 0)
                         .toFixed(2)}
+                   </span>
                 </div>
             </div>
         </div>

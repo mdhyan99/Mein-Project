@@ -7,12 +7,26 @@ body{
   border: 1px solid gray;
   margin-top: 50px;
 }
+ .text{
+  color: chocolate;
+}
+.text-1{
+  color: rgb(201, 38, 38);
+  font-size: 30px;
+}
 .centr{
   text-align: center;
 }
 
-
-
+.span-zahl{
+  color: rgb(163, 118, 67);
+}
+.span-result{
+  color: red;
+}
+.span-sum2{
+  color: rgb(170, 184, 90);
+}
 /* für die pfeile löchen */
 
 /* Chrome, Safari, Edge, Opera */
