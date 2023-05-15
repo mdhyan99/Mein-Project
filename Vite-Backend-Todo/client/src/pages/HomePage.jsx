@@ -11,7 +11,7 @@ import StoreContext from "../context/StoreContext";
 
 const HomePage = () => {
     const { todos, addTodos, setTodos } = useContext(StoreContext);
-   e
+   
     return (
         <div>
             <h1 className="text-5xl mb-5"> Aufgaben verwalten</h1>
