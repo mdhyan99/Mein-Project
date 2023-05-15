@@ -3,11 +3,11 @@ import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
-import image from "./image/p1.webp";
+import image from "./image/p2.webp";
 import TerminContext from "../context/TerminContext";
 
 const AddItem = () => {
-    const {termine,setTermine,addItem,handelSubmit,handelChange1,termin} = useContext(TerminContext)
+    const {termine,handelSubmit,handelChange1,termin} = useContext(TerminContext)
 
         console.log(termine);
     return (

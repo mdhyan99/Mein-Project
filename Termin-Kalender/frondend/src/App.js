@@ -10,7 +10,7 @@ function App() {
       
       
                 <div className="text-center1">
-                    <h1 className="text-center1"> Termin Liste</h1>
+                    <h1 className="text-center1 text-center1-h1"> Termin Liste</h1>
         <TerminProvider>
                 <BrowserRouter>
                     <Routes>
