@@ -28,8 +28,8 @@ const [searchWord,setSearchWord]=useState("")
             <div className="search  w-100">
               {/* <button onClick={onSearch} > */}
                 <AiOutlineSearch  onClick={onSearch} className="fa fa-search"/>
-              <input onChange={(e) => setSearchWord(e.target.value)} type="text" value={searchWord} className="form-control" placeholder="Search mit icon klicken" />
-              <input onChange={(e) => onSearches(e.target.value)} type="text" className="form-control" placeholder="Search ohne icon klicken" />
+              <input onChange={(e) => setSearchWord(e.target.value)} type="text" value={searchWord} className="form-control" placeholder="Search " />
+              {/* <input onChange={(e) => onSearches(e.target.value)} type="text" className="form-control" placeholder="Search ohne icon klicken" /> */}
             </div>
           </Col>
         </Row>
