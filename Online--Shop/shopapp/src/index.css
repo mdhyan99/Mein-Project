@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* category css  */
+.start{
+  padding: 15px;
+}
+.start img{
+    padding: 15px;
+    aspect-ratio: 1/1;
+
+  }
+.link1 {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+.link {
+    color: rgb(142, 112, 112);
+    text-decoration: none;
+}
+/* NavBar */
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 46px;
+    z-index: 2;
+    background-color: rgb(255, 249, 240);
+  }
+  /* ProductCard*/
+  .span-like {
+    color: rgb(163, 48, 48);
+    font-size: 14px;
+    position: absolute;
+    margin-top: 12px;
+}
+
+  .icon-korb {
+    color: rgba(49, 49, 229, 0.947);
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* favoriteproduct css */
+.favorite-product{
+    padding: 20px;
+
+}
+.title_h1{
+    text-align: center;
+    margin-top: 48px;
+    color: darkgoldenrod;
+}
+.link:hover {
+    color: rgb(235, 188, 188);
+}
+.link1 .active {
+    color: rgb(239, 17, 17);
+}
+.likeIcon {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.likeIcon button {
+    border: none;
+    background-color: white;
+}
+
+@media (max-width: 350px) {
+    .link1 {
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .spanText {
+        font-size: 11px;
+    }
+    .searchInput {
+        width: 100px;
+    }
+    .produktname {
+        font-size: 13px;
+    }
+    .korp {
+        font-size: 10px;
+    }
+}
